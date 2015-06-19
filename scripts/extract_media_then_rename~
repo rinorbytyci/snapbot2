@@ -1,0 +1,18 @@
++#!/bin/bash
++if [ $# -eq 0 ]; then
++    echo "Error: No arguments provided"
++    echo "Usage: extract_media_then_rename [7z FILE]"
++    echo "Extracts the media file embedded in the [7z FILE] and renames it to the original [7z FILE]"
++    exit 1
++fi
++#runs 7z and extracts all the files starting with media into current directory
++7z x $1 media*
++#if that was successful, then rename it to the [7z FILE] or $1 in bash else, fail
++if [ $? -eq 0 ]; then
++    mv media* $1
++    echo OK: media extracted to $1;
++    exit 0;
++else
++    echo FAIL;
++    exit 1;
++fi

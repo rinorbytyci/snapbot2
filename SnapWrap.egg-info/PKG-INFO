@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: SnapWrap
+Version: 0.2
+Summary: Wrapper for Snapchat's API!
+Home-page:  https://github.com/Rob--/SnapWrap
+Author: Robert
+Author-email: UNKNOWN
+License: The MIT License (MIT) - see LICENSE
+Description: This is an API wrapper for Snapchat's unofficial and undocumented API.
+Platform: UNKNOWN
