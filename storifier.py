@@ -3,6 +3,7 @@ from SnapWrap import Snapchat
 
 class StorifierBot(Snapchat):
     def on_snap(self, sender, snap):
+        print "New snap from: " + repr(sender)
         self.post_story(snap)
 
     def on_friend_add(self, friend):
